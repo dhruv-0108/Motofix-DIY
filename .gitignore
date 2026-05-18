@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# manuals & scripts (local only)
+*.pdf
+*.py
+*.json
+!package.json
+!package-lock.json
