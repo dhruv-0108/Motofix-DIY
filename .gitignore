@@ -46,3 +46,4 @@ next-env.d.ts
 *.json
 !package.json
 !package-lock.json
+!vercel.json
