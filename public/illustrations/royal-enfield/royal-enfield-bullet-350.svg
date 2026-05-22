@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <pattern id="grid-bullet" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#222" stroke-width="0.5"/>
+    </pattern>
+    <g id="spokes-bullet">
+      <line x1="0" y1="0" x2="115" y2="25" stroke="#555" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="115" y2="-25" stroke="#555" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="-115" y2="25" stroke="#555" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="-115" y2="-25" stroke="#555" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="25" y2="115" stroke="#555" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="-25" y2="115" stroke="#555" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="25" y2="-115" stroke="#555" stroke-width="0.75" />
+      <line x1="0" y1="0" x2="-25" y2="-115" stroke="#555" stroke-width="0.75" />
+    </g>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0D0D0D" />
+  <rect width="100%" height="100%" fill="url(#grid-bullet)" opacity="0.3" />
+
+  <!-- Annotation/Technical borders -->
+  <rect x="20" y="20" width="1160" height="660" fill="none" stroke="#333" stroke-width="1" />
+  <text x="50" y="60" fill="#666" font-family="monospace" font-size="14" font-weight="bold">ROYAL ENFIELD BULLET 350 | PHASE 2 ILLUSTRATION</text>
+
+  <!-- Motorcycle Main Silhouette -->
+  <g fill="none" stroke="#F0EDE8" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Wheels -->
+    <g id="wheels">
+      <!-- Front Wheel -->
+      <circle cx="250" cy="520" r="120" stroke="#444" stroke-width="12" />
+      <circle cx="250" cy="520" r="108" stroke="#F0EDE8" stroke-width="2" />
+      <circle cx="250" cy="520" r="24" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="1.5" />
+      <g transform="translate(250, 520)"><use href="#spokes-bullet" /><use href="#spokes-bullet" transform="rotate(20)" /></g>
+      
+      <!-- Rear Wheel -->
+      <circle cx="950" cy="520" r="120" stroke="#444" stroke-width="14" />
+      <circle cx="950" cy="520" r="106" stroke="#F0EDE8" stroke-width="2" />
+      <circle cx="950" cy="520" r="28" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="1.5" />
+      <g transform="translate(950, 520)"><use href="#spokes-bullet" /><use href="#spokes-bullet" transform="rotate(20)" /></g>
+    </g>
+
+    <!-- Front Telescopic Suspension -->
+    <g id="front-susp">
+      <path d="M 120 500 C 120 440, 180 395, 290 410" stroke="#F0EDE8" stroke-width="3" /> <!-- Heavy Mudguard -->
+      <line x1="250" y1="520" x2="380" y2="220" stroke="#F0EDE8" stroke-width="5.5" />
+      <!-- Triple clamp and headlamp casing -->
+      <rect x="360" y="210" width="30" height="40" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="1.5" transform="rotate(-23, 360, 210)" />
+      <!-- Signature Tiger eyes headlight casing -->
+      <path d="M 330 220 Q 280 230, 270 260 T 320 290" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="2" />
+      <line x1="270" y1="235" x2="270" y2="285" stroke="#F0EDE8" stroke-width="2" />
+    </g>
+
+    <!-- Engine and Frame -->
+    <g id="engine-frame">
+      <rect x="500" y="380" width="100" height="90" rx="6" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="2" />
+      <!-- Cylinder fins -->
+      <line x1="490" y1="390" x2="610" y2="390" stroke="#F0EDE8" stroke-width="2.5" />
+      <line x1="485" y1="405" x2="615" y2="405" stroke="#F0EDE8" stroke-width="2" />
+      <line x1="485" y1="420" x2="615" y2="420" stroke="#F0EDE8" stroke-width="2" />
+      <line x1="490" y1="435" x2="610" y2="435" stroke="#F0EDE8" stroke-width="2" />
+      <circle cx="580" cy="495" r="50" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="2" /> <!-- Crankcase -->
+      
+      <!-- Exhaust pipe long straight -->
+      <path d="M 580 440 Q 640 440, 650 515 T 800 540 L 1080 540" stroke="#F0EDE8" stroke-width="4.5" />
+    </g>
+
+    <!-- Traditional Teardrop Tank & Single Bench Seat -->
+    <g id="body-paneling">
+      <!-- Fuel Tank -->
+      <path d="M 390 230 C 440 200, 580 200, 670 310 C 640 340, 540 350, 420 295 Z" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="3" />
+      <path d="M 440 242 Q 490 230, 560 290 Q 490 310, 440 242" stroke="#666" stroke-width="1" /> <!-- Traditional Golden pinstriping outline -->
+      
+      <!-- Classic 1-Piece Long Bench Seat -->
+      <path d="M 670 310 Q 720 290, 800 320 T 900 370 L 685 360 Z" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="3" />
+      
+      <!-- Signature Square-ish Toolbox Side Panel -->
+      <rect x="710" y="380" width="80" height="70" rx="8" fill="#1A1A1A" stroke="#F0EDE8" stroke-width="2.5" />
+      <!-- Signature Bullet 350 gold lettering placeholder -->
+      <line x1="725" y1="415" x2="775" y2="415" stroke="#F0EDE8" stroke-width="2" />
+    </g>
+
+    <!-- Rear Susp & Mudguard -->
+    <g id="rear-susp-mudguard">
+      <!-- Heavy Valanced Rear Mudguard -->
+      <path d="M 780 370 C 850 365, 960 410, 990 510" stroke="#F0EDE8" stroke-width="4" />
+      <!-- Rear Shock -->
+      <line x1="820" y1="360" x2="820" y2="510" stroke="#F0EDE8" stroke-width="3" />
+    </g>
+
+  </g>
+</svg>
