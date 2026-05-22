@@ -8,7 +8,6 @@ export default function Navbar() {
   const links = [
     { name: 'Home', path: '/' },
     { name: 'My Bike', path: '/select-bike' },
-    { name: 'Royal Enfield', path: '/bikes/royal-enfield' },
     { name: 'DIY Guides', path: '/guides' },
     { name: 'Service Checklist', path: '/checklist/select' }, // Using a generic path for now
     { name: 'About', path: '/about' },

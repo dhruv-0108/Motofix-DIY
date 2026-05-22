@@ -12,7 +12,7 @@ interface LayoutProps {
 export default function Layout({ 
   children, 
   title = "Motofix DIY | Know Your Bike. Own Your Ride.",
-  description = "Model-specific maintenance guides, service timelines, and DIY instructions — built for Indian riders."
+  description = "Model-specific maintenance guides, service timelines, and DIY instructions — built for riders all around the world."
 }: LayoutProps) {
   return (
     <>

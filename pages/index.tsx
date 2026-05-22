@@ -15,66 +15,12 @@ export default function Home() {
             <span className="text-[#F5A623]">Own Your Ride.</span>
           </h1>
           <p className="text-lg md:text-xl text-[#F0EDE8]/80 max-w-2xl mb-10">
-            Model-specific maintenance guides, service timelines, and DIY instructions — built for Indian riders.
+            Model-specific maintenance guides, service timelines, and DIY instructions — built for riders all around the world.
           </p>
           <Link href="/select-bike" className="group flex items-center bg-[#F5A623] hover:bg-[#F5A623]/90 text-[#0D0D0D] font-bold text-lg px-8 py-4 rounded-sm transition-all uppercase tracking-wider">
             Select Your Bike
             <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Link>
-        </div>
-      </section>
-
-      {/* Brand Selector Section (Phase 2 Stub) */}
-      <section className="py-20 bg-[#0D0D0D] border-b border-[#333]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-wider text-[#F0EDE8] mb-4">
-              Your Bike. <span className="text-[#F5A623]">Your Manual.</span>
-            </h2>
-            <p className="text-[#F0EDE8]/60 max-w-xl mx-auto text-sm md:text-base">
-              Select your motorcycle manufacturer to access full model indexes, interactive line art, and manual-verified step-by-step DIY instructions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
-            {/* Active Brand: Royal Enfield */}
-            <Link 
-              href="/bikes/royal-enfield"
-              className="group bg-[#1A1A1A] border border-[#F5A623]/40 hover:border-[#F5A623] p-6 rounded-sm text-center flex flex-col items-center justify-center transition-all duration-300 hover:scale-102 hover:shadow-[0_0_15px_rgba(245,166,35,0.05)] h-32"
-            >
-              <div className="text-[#F5A623] font-black tracking-widest text-lg uppercase group-hover:scale-105 transition-transform duration-300">
-                RE
-              </div>
-              <div className="text-[#F0EDE8] font-bold text-xs uppercase tracking-wider mt-2.5">
-                Royal Enfield
-              </div>
-            </Link>
-
-            {/* Inactive Brands (Coming Soon) */}
-            {[
-              { id: 'bajaj', name: 'Bajaj' },
-              { id: 'tvs', name: 'TVS' },
-              { id: 'honda', name: 'Honda' },
-              { id: 'ktm', name: 'KTM' },
-              { id: 'yamaha', name: 'Yamaha' },
-              { id: 'hero', name: 'Hero' }
-            ].map((brand) => (
-              <div 
-                key={brand.id}
-                className="bg-[#1A1A1A]/40 border border-[#333]/60 p-6 rounded-sm text-center flex flex-col items-center justify-center h-32 select-none opacity-40"
-              >
-                <div className="text-[#F0EDE8]/30 font-bold tracking-widest text-sm uppercase">
-                  {brand.name.substring(0, 3)}
-                </div>
-                <div className="text-[#F0EDE8]/45 font-semibold text-[10px] uppercase tracking-wider mt-2">
-                  {brand.name}
-                </div>
-                <span className="bg-[#333]/40 text-[#F0EDE8]/35 text-[8px] font-extrabold uppercase px-1.5 py-0.5 rounded-sm border border-[#333]/80 mt-2">
-                  Coming Soon
-                </span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

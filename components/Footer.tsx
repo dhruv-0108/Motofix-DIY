@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-[#F0EDE8] font-bold text-xl uppercase tracking-wider ml-1">DIY</span>
             </Link>
             <p className="mt-4 text-[#F0EDE8]/70 text-sm max-w-sm">
-              Know Your Bike. Own Your Ride. Model-specific maintenance guides, service timelines, and DIY instructions — built for Indian riders.
+              Know Your Bike. Own Your Ride. Model-specific maintenance guides, service timelines, and DIY instructions — built for riders all around the world.
             </p>
           </div>
           
